@@ -1,0 +1,319 @@
+1) How and where did we call CounterComponent in our application?
+
+a)In index.js , ReactDOM.render(<Counter / >, document.getElementById(“root”);
+b) In App.js <Counter/>
+c) Both
+d) None
+
+Answer a
+
+2) Which of the following is a bundler 
+a)WebServer
+b) WebPack
+c) Babel
+d) All
+
+Answer b
+
+3) What is the concept below called as
+{city,state,country} = this.state.address
+
+a) destructor
+b) destructing
+c) destructuring
+d) None
+
+Answer c
+
+
+
+4) What is single source of truth
+a) A component which owns the state can only modify the state.
+b) a component which passes the props should be able to modify the state
+c) both
+d) none
+
+Answer A
+
+
+5) Which hook i used to create state in a function Component
+a)useEffect
+b)useState
+c)useRef
+d) none
+
+Answer b
+
+6) A class Component is made up of 
+a) Props , State
+b) State , Render
+c) Render , Props
+d) All the above
+
+Answer b
+
+7) Predict the output of the syntax
+class Counters extends Component{
+state={
+counters:[
+{id:1,value:0},
+{id:1,value:0},
+{id:1,value:0},
+{id:1,value:0},
+]
+}
+
+render(){
+return
+(
+this.state.counters.map(counter => <Counter value={counter.value} selected={true} />
+)
+}
+}
+
+export Counters
+
+a) displays 4 counters on the browser
+b) runtime error
+c) both
+d) none
+
+Answer b
+
+
+8)
+this.state.counters.map(counter => <Counter key={counter.id} value={counter.value} selected={true} >
+<h4> Counter {counter.id} </h4>
+</Counter>
+))}
+
+What is <h4> Counter {counter.id}
+
+a) props.children
+b) props
+c) state
+d) all
+
+Answer a
+
+9)
+What does the handleDelete EventHandler do
+handleDelete = counterId => {
+const counters = this.state.counters.filter ( counter => counter.id !== counterId)
+this.setState(counters)
+}
+
+a) Deletes all the values in array
+b) Creates a new counters array excludind the counter with a given id and setState
+c) Updates the existing counterarray and setDate
+d) all the above
+
+Answer b
+
+10)React is a ___________
+a) Javascript framework
+b) Javascript library
+c) both a and b
+d) None
+
+Answer b
+
+11)Which of the following is used to refer a react application
+a) Imperactive
+b) Integrated
+c) Declarative
+d)  closed
+Answer c
+
+
+12)Why is ref used?
+a) To bind a function
+b) to call a function
+c) to directly access the dom node
+d) to refer to another js file
+
+Answer c
+
+13)Where do i add bootstrap and fontawesome after installing
+a) import them in App.js
+b) import them in index.js
+c) both
+d) none
+
+Answer a
+
+14)Babel after compiling jsx code , which function is called per html element
+a) react.createElement
+b) reactFragment
+c) none
+d) Element
+
+Answer a
+
+15) Entry point for a react application is
+a) index.html
+b) index.js
+c) App.js
+d) App.css
+
+Answer b
+
+16) Which of the following is blockscoped
+a) let , const
+b) let , var
+c) var, const
+d) all
+
+Answer a
+
+17) Predict the output
+function sayHello()
+{
+ for(var i=0;i<5;i++)
+  {
+    console.log(i);
+  }
+  console.log(i);
+}
+sayHello();
+
+a)
+0
+1
+2
+3
+4
+5
+
+b)
+1
+2
+3
+4
+5
+
+c) 
+0
+1
+2
+3
+4
+
+d) None
+
+Answers a
+
+18) Which command is used to compile a typescript program
+
+a) node filename.ts
+b) tsc filename.ts
+c) ts filename.js
+d) none
+
+Answer b
+
+19) Which of the following is the correct declaration of variables in typescript
+a) let variable1="hello"
+b) let variable1:string = "hello"
+c) let variable1:string
+variable1="hello"
+d) All the above
+
+Answer d
+
+20) Which of the following is used to increse the performance of React.js
+a) Real DOM
+b) Virtual DOM
+c) both
+d) none
+
+Answer b
+
+21) 
+Statement1 : Angular is framework
+Statement2: React is a UI Library  (ViewLibrary)
+
+a) Statement1 is true Statement2 is false
+b) Statement1 is false Statement2 is true
+c) Statement1 is true Statement2 is true
+d) Statement1 is false Statement2 is false
+
+Answer c
+
+22) Which command should be used to get configuration files in react
+a) npm i
+b) npm eject
+c) npm start
+d) all
+
+Answer  b
+
+23) I dentify the one which is used to pass data to component from outside
+a) render with arguments
+b) setState
+c) PropTypes
+d) props
+
+Answer d
+
+24) Which of the following port  is the default where webpack-dev-server run?
+a) 3000
+b) 3306
+c) 3030
+d) 8080
+Answer a
+
+25) Which of the following method  is used to access the state of a component from inside of a member function
+a) this.prototype.state
+b) this.getState()
+c) this.value
+d) this.state
+
+Answer d
+
+26)  Which following function is used to change the state of the react component
+a) this.setState()
+b) this.state()
+c) this.setStateChange()
+d) all
+
+Answer a
+
+27) JSX stands for __________
+a) Javascript XML
+b) JSON xml
+c) JSON
+d) Java Script Angular JS
+
+Answer a
+
+28) <Route path="/" exact component={Home}/>
+what does exact do
+a) displays home component if there is no url typed
+b) display home component if any url is types
+c) does not display home component if no url is typed
+d) none
+
+Answer a
+
+29) Name the props associated with each route
+a) match
+b) location
+c) history
+d) all
+
+Answer d
+
+30)<Route path="/posts/:year?/:month?" exact component={Posts}/>
+a) executes the route without year and month
+b) executes the route with year
+c) executes the route with month
+d) all the above
+
+Answer d 
+
+
+
+
+
+
